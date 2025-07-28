@@ -25,3 +25,7 @@ Makefile
 mcr.config.cjs
 codecov.config.cjs
 typedoc.jsonc
+
+# Deno
+jsr
+deno.json 

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
-current_version="$(jq '.version' package.json | tr -d '"')"
-npm_registry_version="$(npm info @lwe8/multiregexp version)"
+current_npm_version="$(jq '.version' package.json | tr -d '"')"
+current_jsr_version="$(jq '.version' deno.json | tr -d '"')"
+npm_registry_version="$(npm info ptm-multiregexp version)"
 
-echo "current version: $current_version"
+echo "current npm version: $current_version"
 echo "npm registry version: $npm_registry_version"
 
 if [[ "$current_version" == "$npm_registry_version" ]]; then
