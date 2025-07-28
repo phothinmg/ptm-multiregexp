@@ -5,11 +5,17 @@
 
 ## About
 
-This is extends from [multiregexp][multiregexp] . Use multiple RegExp like you had only one ! Iterate on matches or find the first match.
+Use multiple RegExp like you had only one ! Iterate on matches or find the first match.
+
+> [!NOTE]
+> This is extends from [multiregexp][multiregexp]
 
 ## Install and Use
 
-### Node Js
+### Install from npm
+
+![NPM Version][npm-version]
+
 
 ```bash
 npm i ptm-multiregexp
@@ -45,6 +51,40 @@ group_2: "Hello World",
 */
 ```
 
+### Install from jsr.io
+
+[![JSR][jsr-bg]][jsr-package]
+
+**_deno_**
+
+```bash
+deno add @ptm/multiregexp
+```
+
+**_npm_**
+
+```bash
+npx jsr add @ptm/multiregexp
+```
+
+**_yarn_**
+
+```bash
+yarn dlx jsr add @ptm/multiregexp
+```
+
+**_pnpm_**
+
+```bash
+pnpm dlx jsr add @ptm/multiregexp
+```
+
+**_bun_**
+
+```bash
+bunx jsr add @ptm/multiregexp
+```
+
 ## API
 
 [API docs][api]
@@ -60,3 +100,6 @@ group_2: "Hello World",
 [api]: https://phothinmg.github.io/ptm-multiregexp/
 [codeql]: https://img.shields.io/github/actions/workflow/status/phothinmg/ptm-multiregexp/codeql.yml?style=flat&logo=github&label=Codeql
 [codeql-url]: https://github.com/phothinmg/ptm-multiregexp/blob/main/.github/workflows/codeql.yml
+[npm-version]: https://img.shields.io/npm/v/ptm-multiregexp
+[jsr-bg]:https://jsr.io/badges/@ptm/multiregexp
+[jsr-package]: https://jsr.io/@ptm/multiregexp
