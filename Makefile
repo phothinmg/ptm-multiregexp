@@ -5,7 +5,7 @@ COLOR_END   = \e[0m
 SAY         = @printf "$(COLOR_START)%s\n$(COLOR_END)"
 
 
-.PHONY: install build test docs format lint check coverage
+.PHONY: install build test docs format lint check coverage deploy
 
 install:
 	$(SAY) "Install dependencies..."
@@ -37,4 +37,8 @@ lint:
 
 check:
 	$(SAY) "Checking..."
+	@npm run $@
+
+deploy:
+	$(SAY) "Deploy to gh-pages .."
 	@npm run $@
