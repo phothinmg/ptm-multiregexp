@@ -1,6 +1,6 @@
 # Multi RegExp
 
-[![coverage][coverage]][coverage-url]
+[![codecov][coverage]][coverage-url]
 
 ## About
 
@@ -29,5 +29,5 @@ yarn add ptm-multiregexp
 <!-- Definition -->
 
 [multiregexp]: https://github.com/christophehurpeau/multiregexp
-[coverage]: https://img.shields.io/badge/coverage-96.97-brightgreen?style=flat
-[coverage-url]: https://lwe8.github.io/multiregexp/lcoview/index.html
+[coverage]: https://codecov.io/github/phothinmg/ptm-multiregexp/graph/badge.svg?token=GP8s1Nsxw0
+[coverage-url]: https://codecov.io/github/phothinmg/ptm-multiregexp
