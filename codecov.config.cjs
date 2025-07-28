@@ -1,6 +1,6 @@
 module.exports = {
   name: "PTM Multi RegExp",
-  outputDir: "codecov",
+  outputDir: "mcr",
   reports: [['codecov']],
   entryFilter: {
     "**/node_modules/**": false,
