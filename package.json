@@ -1,0 +1,49 @@
+{
+  "name": "ptm-multiregexp",
+  "version": "0.0.1",
+  "description": "Multi RegExp",
+  "type": "module",
+  "scripts": {
+    "build": "tshy",
+    "format": "biome format --write ./",
+    "lint": "biome check --write ./",
+    "check": "biome check ./",
+    "test": "tsx --test",
+    "coverage": "mcr --import tsx tsx --test",
+    "docs": "typedoc && npm run coverage",
+    "deploy": "npm run docs && gh-pages -d docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phothinmg/ptm-multiregexp.git"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2",
+    "@types/node": "^24.1.0",
+    "gh-pages": "^6.3.0",
+    "tshy": "^3.0.2",
+    "tsx": "^4.20.3",
+    "typedoc": "^0.28.7",
+    "typedoc-plugin-rename-defaults": "^0.7.3",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "monocart-coverage-reports": "^2.12.6"
+  },
+  "keywords": [
+    "multiregexp",
+    "regexp"
+  ],
+  "author": "Pho Thin Mg <phothinmg@disroot.org>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/phothinmg/ptm-multiregexp/issues"
+  },
+  "homepage": "https://github.com/phothinmg/ptm-multiregexp#readme",
+  "tshy": {
+    "exports": {
+      ".": "./src/index.ts"
+    },
+    "selfLink": false
+  }
+}
