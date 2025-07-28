@@ -6,7 +6,9 @@
 
 This is extends from [multiregexp][multiregexp] . Use multiple RegExp like you had only one ! Iterate on matches or find the first match.
 
-## Install
+## Install and Use
+
+### Node Js
 
 ```bash
 npm i ptm-multiregexp
@@ -20,11 +22,31 @@ pnpm i ptm-multiregexp
 yarn add ptm-multiregexp
 ```
 
-## Quick example
+#### Example
 
-```js
+```ts
+import MultiRegExp from "ptm-multiregexp";//esm
+import MultiRegExp = require("ptm-multiregexp");//cjs
 
+const regexp = /(#{1,6})[ ]+(.*)/g;
+const string = "## Hello World";
+
+const multiregexp = new MultiRegExp([regexp]);
+const result = multiregexp.getMatched(string);
+
+/*
+match: "## Hello World",
+start: 0,
+end: 14,
+groupCount: 2,
+group_1: "##",
+group_2: "Hello World",
+*/
 ```
+
+## API
+
+
 
 <!-- Definition -->
 

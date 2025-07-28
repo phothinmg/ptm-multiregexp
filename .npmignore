@@ -20,4 +20,8 @@ tsconfig.json
 documents
 tests
 scripts
-codecov
+mcr
+Makefile
+mcr.config.cjs
+codecov.config.cjs
+typedoc.jsonc

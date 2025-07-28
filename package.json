@@ -8,7 +8,7 @@
     "format": "biome format --write ./",
     "lint": "biome check --write ./",
     "check": "biome check ./",
-    "test": "tsx --test",
+    "test": "tsx --test --test-update-snapshots",
     "coverage": "mcr --import tsx -c mcr.config.cjs tsx --test --test-update-snapshots",
     "codecov": "mcr --import tsx -c codecov.config.cjs tsx --test --test-update-snapshots",
     "docs": "typedoc && npm run coverage",
@@ -18,18 +18,22 @@
     "type": "git",
     "url": "git+https://github.com/phothinmg/ptm-multiregexp.git"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "devDependencies": {
     "@biomejs/biome": "^2.1.2",
     "@types/node": "^24.1.0",
     "gh-pages": "^6.3.0",
+    "monocart-coverage-reports": "^2.12.6",
     "tshy": "^3.0.2",
     "tsx": "^4.20.3",
     "typedoc": "^0.28.7",
     "typedoc-plugin-rename-defaults": "^0.7.3",
     "typescript": "^5.8.3"
-  },
-  "dependencies": {
-    "monocart-coverage-reports": "^2.12.6"
   },
   "keywords": [
     "multiregexp",
@@ -46,5 +50,24 @@
       ".": "./src/index.ts"
     },
     "selfLink": false
-  }
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
+    }
+  },
+  "main": "./dist/commonjs/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "module": "./dist/esm/index.js"
 }
