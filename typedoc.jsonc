@@ -8,7 +8,7 @@
 		"document": false
 	},
 	"navigationLinks": {
-		"Coverage": "https://lwe8.github.io/multiregexp/lcoview/index.html"
+		"Coverage": "https://app.codecov.io/github/phothinmg/ptm-multiregexp"
 	},
 	"favicon": "documents/favicon.ico",
 	"name": "Multi RegExp",
