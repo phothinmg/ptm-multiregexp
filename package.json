@@ -44,7 +44,7 @@
   "bugs": {
     "url": "https://github.com/phothinmg/ptm-multiregexp/issues"
   },
-  "homepage": "https://github.com/phothinmg/ptm-multiregexp#readme",
+  "homepage": "https://phothinmg.github.io/ptm-multiregexp/",
   "tshy": {
     "exports": {
       ".": "./src/index.ts"
