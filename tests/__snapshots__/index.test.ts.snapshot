@@ -1,0 +1,96 @@
+exports[`Single RegExp > allMatches 1`] = `
+{
+  "_regexp": {},
+  "_string": "hihi"
+}
+`;
+
+exports[`Single RegExp > firstMatch 1`] = `
+{
+  "regexp": {},
+  "string": "hello world"
+}
+`;
+
+exports[`Two RegExp > allMatches 1`] = `
+{
+  "regExp1": {},
+  "regExp2": {}
+}
+`;
+
+exports[`Two RegExp > firstMatch 1`] = `
+{
+  "regExp1": {},
+  "regExp2": {}
+}
+`;
+
+exports[`Two RegExp > firstMatch 2`] = `
+{
+  "regExp1": {},
+  "regExp2": {}
+}
+`;
+
+exports[`findMatch > should find a match with a single regular expression 1`] = `
+{
+  "regExp": {},
+  "string": "hello world"
+}
+`;
+
+exports[`findMatch > should find a match with a single regular expression 2`] = `
+{
+  "regExp": {},
+  "string": ""
+}
+`;
+
+exports[`findMatch > should find a match with multiple regular expressions 1`] = `
+{
+  "regExp": {},
+  "string": "hello world"
+}
+`;
+
+exports[`findMatch > should return null with a start index that is out of range 1`] = `
+{
+  "regExp": {},
+  "string": "hello world"
+}
+`;
+
+exports[`findMatch > should return null with multiple regular expressions where none match 1`] = `
+{
+  "regExp": {},
+  "string": "hello world"
+}
+`;
+
+exports[`getMatched > Get Matched 1`] = `
+{
+  "regexp": {},
+  "string": "## Hello World",
+  "result": [
+    {
+      "match": "## Hello World",
+      "start": 0,
+      "end": 14,
+      "groupCount": 2,
+      "group_1": "##",
+      "group_2": "Hello World"
+    }
+  ],
+  "obj": [
+    {
+      "match": "## Hello World",
+      "start": 0,
+      "end": 14,
+      "groupCount": 2,
+      "group_1": "##",
+      "group_2": "Hello World"
+    }
+  ]
+}
+`;
