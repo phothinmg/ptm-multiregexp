@@ -1,6 +1,6 @@
 # Multi RegExp
 
-[![codecov][coverage]][coverage-url] [![GitHub Actions Workflow Status][npm-publish]][npm-publish-wf] [![GitHub Actions WorkflowStatus][codeql]][codeql-url]
+![NPM Version][npm-version] [![JSR][jsr-bg]][jsr-package] [![codecov][coverage]][coverage-url] [![GitHub Actions Workflow Status][npm-publish]][npm-publish-wf] [![GitHub Actions Workflow Status][jsr-publish]][jsr-publish-wf] [![GitHub Actions WorkflowStatus][codeql]][codeql-url]
 
 ## About
 
@@ -12,8 +12,6 @@ Use multiple RegExp like you had only one ! Iterate on matches or find the first
 ## Install and Use
 
 ### Install from npm
-
-![NPM Version][npm-version]
 
 ```bash
 npm i ptm-multiregexp
@@ -38,9 +36,7 @@ import MultiRegExp = require("ptm-multiregexp"); // typescript cjs
 const MultiRegExp = require("ptm-multiregexp"); // cjs
 ```
 
-### Install from jsr.io
-
-[![JSR][jsr-bg]][jsr-package]
+### Install from jsr
 
 #### deno
 
@@ -108,7 +104,6 @@ _Import symbol_
 import * as multiregexp from "@ptm/multiregexp";
 ```
 
-
 ## Example
 
 ```ts
@@ -150,3 +145,5 @@ group_2: "Hello World",
 [npm-version]: https://img.shields.io/npm/v/ptm-multiregexp
 [jsr-bg]: https://jsr.io/badges/@ptm/multiregexp
 [jsr-package]: https://jsr.io/@ptm/multiregexp
+[jsr-publish]: https://img.shields.io/github/actions/workflow/status/phothinmg/ptm-multiregexp/publish.yml?logo=jsr&label=publish%20to%20jsr
+[jsr-publish-wf]: https://github.com/phothinmg/ptm-multiregexp/blob/main/.github/workflows/publish.yml
