@@ -8,7 +8,7 @@
 		"document": false
 	},
 	"navigationLinks": {
-		"Coverage": "https://app.codecov.io/github/phothinmg/ptm-multiregexp"
+		"Coverage Report": "https://phothinmg.github.io/ptm-multiregexp/mcr/index.html"
 	},
 	"favicon": "documents/favicon.ico",
 	"name": "Multi RegExp",
