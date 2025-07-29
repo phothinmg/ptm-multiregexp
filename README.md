@@ -2,7 +2,6 @@
 
 [![codecov][coverage]][coverage-url] [![GitHub Actions Workflow Status][npm-publish]][npm-publish-wf] [![GitHub Actions WorkflowStatus][codeql]][codeql-url]
 
-
 ## About
 
 Use multiple RegExp like you had only one ! Iterate on matches or find the first match.
@@ -16,7 +15,6 @@ Use multiple RegExp like you had only one ! Iterate on matches or find the first
 
 ![NPM Version][npm-version]
 
-
 ```bash
 npm i ptm-multiregexp
 ```
@@ -29,12 +27,91 @@ pnpm i ptm-multiregexp
 yarn add ptm-multiregexp
 ```
 
-#### Example
+_Import_
 
 ```ts
-import MultiRegExp from "ptm-multiregexp";//esm
-import MultiRegExp = require("ptm-multiregexp");//cjs
+import MultiRegExp from "ptm-multiregexp"; //esm
+import MultiRegExp = require("ptm-multiregexp"); // typescript cjs
+```
 
+```js
+const MultiRegExp = require("ptm-multiregexp"); // cjs
+```
+
+### Install from jsr.io
+
+[![JSR][jsr-bg]][jsr-package]
+
+#### deno
+
+```bash
+deno add jsr:@ptm/multiregexp
+```
+
+_Import symbol_
+
+```ts
+import * as multiregexp from "@ptm/multiregexp";
+```
+
+_Import directly with a jsr specifier_
+
+```ts
+import * as multiregexp from "jsr:@ptm/multiregexp";
+```
+
+#### npm
+
+```bash
+npx jsr add @ptm/multiregexp
+```
+
+_Import symbol_
+
+```ts
+import * as multiregexp from "@ptm/multiregexp";
+```
+
+#### yarn
+
+```bash
+yarn add jsr:@ptm/multiregexp
+```
+
+Using Yarn 4.8 or older
+
+```bash
+yarn dlx jsr add @ptm/multiregexp
+```
+
+_Import symbol_
+
+```ts
+import * as multiregexp from "@ptm/multiregexp";
+```
+
+#### pnpm
+
+```bash
+pnpm i jsr:@ptm/multiregexp
+```
+
+Using pnpm 10.8 or older
+
+```bash
+pnpm dlx jsr add @ptm/multiregexp
+```
+
+_Import symbol_
+
+```ts
+import * as multiregexp from "@ptm/multiregexp";
+```
+
+
+## Example
+
+```ts
 const regexp = /(#{1,6})[ ]+(.*)/g;
 const string = "## Hello World";
 
@@ -51,47 +128,17 @@ group_2: "Hello World",
 */
 ```
 
-### Install from jsr.io
-
-[![JSR][jsr-bg]][jsr-package]
-
-**_deno_**
-
-```bash
-deno add @ptm/multiregexp
-```
-
-**_npm_**
-
-```bash
-npx jsr add @ptm/multiregexp
-```
-
-**_yarn_**
-
-```bash
-yarn dlx jsr add @ptm/multiregexp
-```
-
-**_pnpm_**
-
-```bash
-pnpm dlx jsr add @ptm/multiregexp
-```
-
-**_bun_**
-
-```bash
-bunx jsr add @ptm/multiregexp
-```
-
 ## API
 
 [API docs][api]
 
+## LICENSE
+
+[Apache-2.0][license]
 
 <!-- Definition -->
 
+[license]: LICENSE
 [multiregexp]: https://github.com/christophehurpeau/multiregexp
 [coverage]: https://codecov.io/github/phothinmg/ptm-multiregexp/graph/badge.svg?token=GP8s1Nsxw0
 [coverage-url]: https://codecov.io/github/phothinmg/ptm-multiregexp
@@ -101,5 +148,5 @@ bunx jsr add @ptm/multiregexp
 [codeql]: https://img.shields.io/github/actions/workflow/status/phothinmg/ptm-multiregexp/codeql.yml?style=flat&logo=github&label=Codeql
 [codeql-url]: https://github.com/phothinmg/ptm-multiregexp/blob/main/.github/workflows/codeql.yml
 [npm-version]: https://img.shields.io/npm/v/ptm-multiregexp
-[jsr-bg]:https://jsr.io/badges/@ptm/multiregexp
+[jsr-bg]: https://jsr.io/badges/@ptm/multiregexp
 [jsr-package]: https://jsr.io/@ptm/multiregexp

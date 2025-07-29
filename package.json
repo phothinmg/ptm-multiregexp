@@ -7,13 +7,13 @@
     "build": "tshy",
     "format": "biome format --write src",
     "lint": "biome check --write src",
-    "lint:deno": "deno lint",
-    "check": "biome check ./",
-    "test": "tsx --test --test-update-snapshots",
-    "coverage": "mcr --import tsx -c mcr.config.cjs tsx --test --test-update-snapshots",
-    "codecov": "mcr --import tsx -c codecov.config.cjs tsx --test --test-update-snapshots",
+    "check": "biome check src",
+    "test": "tsx --test tests/*.test.ts --test-update-snapshots",
+    "coverage": "mcr --import tsx -c mcr.config.cjs tsx --test tests/*.test.ts --test-update-snapshots",
+    "codecov": "mcr --import tsx -c codecov.config.cjs tsx --test tests/*.test.ts --test-update-snapshots",
     "docs": "typedoc && npm run coverage",
-    "deploy": "npm run docs && gh-pages -d docs"
+    "deploy": "npm run docs && gh-pages -d docs",
+    "deno:lint": "deno lint"
   },
   "repository": {
     "type": "git",
